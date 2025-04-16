@@ -54,7 +54,7 @@ public class Nomina {
         }else{
             horasExtras50=180-horasNormales;
             horasExtras60=this.nHoras-180;
-            salarioBruto=horasNormales*this.tarifaHoras+horasExtras50*this.tarifaHoras*1.5+horasExtras60*1.6;
+            salarioBruto=horasNormales*this.tarifaHoras+horasExtras50*this.tarifaHoras*1.5+horasExtras60*tarifaHoras*1.6;
         }
         this.salarioBruto=salarioBruto;
     }
@@ -65,7 +65,7 @@ public class Nomina {
     public void mostrarNomina(){
         double dedSocial,dedConComun,dedSegMed,dedFondoP,dedSegDes,dedPensionC,dedContJubAnt,salarioNeto,deduccionTotal;
         System.out.println(p.toString());
-        System.out.println("Salario Bruto----------> "+this.salarioBruto);
+        System.out.printf("Salario Bruto----------> %.2f € %n",this.salarioBruto);
         System.out.println("Calculo de deducciones");
         dedSocial=this.calcularDeduccion(this.D_DEUDA_SOCIAL);
         System.out.println("Deduccion social--------> "+dedSocial);
@@ -89,6 +89,7 @@ public class Nomina {
         System.out.println("Prima familiar-------> "+this.calcularPrimaFamiliar());
         System.out.println("Salario neto----------> "+salarioNeto+calcularPrimaFamiliar());
     }
+
 
 
 
