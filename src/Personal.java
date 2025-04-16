@@ -10,23 +10,20 @@
  *
  */
 
-
-
-
 public class Personal {
 
 private String nombre;
 private String apellido;
 static int idGeneral=0; //solo se puede llamar en la clase y no se puede crear instancia en un objeto
 private byte nHijos;
-public Puesto puestoE;
+public Puesto PuestoE;
 private int idEmpleado=0; //se instancia con cada objeto de la clase
 
     public Personal(String nombre, String apellido, byte nHijos, Puesto puestoE) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.nHijos = nHijos;
-        this.puestoE = puestoE;
+        this.PuestoE = puestoE;
         this.idEmpleado = ++idGeneral;
     }
 
@@ -55,11 +52,11 @@ private int idEmpleado=0; //se instancia con cada objeto de la clase
     }
 
     public Puesto getPuestoE() {
-        return puestoE;
+        return PuestoE;
     }
 
     public void setPuestoE(Puesto puestoE) {
-        this.puestoE = puestoE;
+        PuestoE = puestoE;
     }
 
     public int getIdEmpleado() {
@@ -68,10 +65,13 @@ private int idEmpleado=0; //se instancia con cada objeto de la clase
 
     @Override
     public String toString() {
-          return "Id Empleado:" + idEmpleado +
-                " Nombre:" + nombre +
-                " Apellido:" + apellido +
-                " NºHijos:" + nHijos +
-                " PuestoE" + puestoE + "\n.....................................\n";
+        return "Personal-> " +
+                "Nombre: " + nombre + '\'' +
+                "Apellido: " + apellido + '\'' +
+                "Nº Hijos: " + nHijos +
+                "PuestoE: " + PuestoE +
+                "IdEmpleado: " + idEmpleado +
+                "\n.....................................\n";
+
     }
 }

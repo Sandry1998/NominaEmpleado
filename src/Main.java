@@ -3,15 +3,15 @@ import java.util.HashSet;
 
 public class Main {
     public static void main(String[] args) {
-        Personal emp1=new Personal("Sandra","Lopez",(byte) 4,Puesto.EMPLEADO_OFICINA);
+        Personal emp1=new Personal("Sandra","Lopez",(byte) 4,Puesto.AGENTE_SERVICIOS);
         System.out.println(emp1);
-        Personal emp2=new Personal("Candy","Perona",(byte) 2,Puesto.AGENTE_SERVICIOS);
+        Personal emp2=new Personal("Candy","Perona",(byte) 2,Puesto.EMPLEADO_OFICINA);
         System.out.println(emp2);
-        Personal emp3= new Personal("Noelia","Martinez",(byte) 3,Puesto.EMPLEADO_OFICINA);
+        Personal emp3= new Personal("Noelia","Martinez",(byte) 3,Puesto.DIRECTIVO);
         System.out.println(emp3);
         Personal emp4=new Personal("Maria","De La Hoz",(byte) 2,Puesto.DIRECTIVO);
         System.out.println(emp4);
-        Personal emp5=new Personal("Ana","Garcia",(byte) 1,Puesto.AGENTE_SERVICIOS);
+        Personal emp5=new Personal("Ana","Garcia",(byte) 1,Puesto.EMPLEADO_OFICINA);
         System.out.println(emp5);
 
 
