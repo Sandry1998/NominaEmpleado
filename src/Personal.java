@@ -66,11 +66,11 @@ private int idEmpleado=0; //se instancia con cada objeto de la clase
     @Override
     public String toString() {
         return "Personal-> " +
-                "Nombre: " + nombre + '\'' +
-                "Apellido: " + apellido + '\'' +
-                "Nº Hijos: " + nHijos +
-                "PuestoE: " + PuestoE +
-                "IdEmpleado: " + idEmpleado +
+                " Nombre: " + nombre +
+                " Apellido: " + apellido +
+                " Nº Hijos: " + nHijos +
+                " PuestoE: " + PuestoE +
+                " IdEmpleado: " + idEmpleado +
                 "\n.....................................\n";
 
     }

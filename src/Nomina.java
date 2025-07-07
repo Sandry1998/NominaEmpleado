@@ -18,6 +18,17 @@ public class Nomina {
         calcularSalarioBruto();
     }
 
+    public Nomina() {
+    }
+
+    public Personal getP() {
+        return p;
+    }
+
+    public void setP(Personal p) {
+        this.p = p;
+    }
+
     public double getnHoras() {
         return nHoras;
     }
@@ -84,7 +95,7 @@ public class Nomina {
         System.out.println("----------------------------------------------------------------------");
         System.out.println("Salario Bruto: "+this.salarioBruto);
         deduccionTotal=dedSocial+dedConComun+dedSegMed+dedFondoP+dedSegDes+dedPensionC+dedContJubAnt;
-        System.out.println("Total deducciones: "+deduccionTotal);
+        System.out.println("Total deducciones: "+(Math.round(deduccionTotal*100)/100.0));
         salarioNeto=this.salarioBruto-deduccionTotal;
         System.out.println("Prima familiar-------> "+this.calcularPrimaFamiliar());
         System.out.println("Salario neto----------> "+salarioNeto+calcularPrimaFamiliar());
